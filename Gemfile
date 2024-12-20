@@ -2,6 +2,7 @@
 
 source "https://rubygems.org"
 
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -126,6 +127,7 @@ group :test do
   gem "test-prof"
   gem "vcr"
   gem "webmock"
+  gem "fast_ci"
 end
 
 group :development, :test do
